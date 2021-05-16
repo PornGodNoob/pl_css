@@ -20,7 +20,7 @@
             border-left: 5px solid #417ace;
             padding-left: 15px;
         }
-        :link, .topmenu a, a.gen, a.med, a.genmed, a.small, a.gensmall {
+        .topmenu a, a.gen, a.med, a.genmed, a.small, a.gensmall {
             color: #d5d5d5;
             text-decoration: none;
         }
@@ -851,7 +851,7 @@ table.forumline { /* Заголовки разной высоты, через к
     }
 }
 
-@-moz-document regexp("https://pornolab.+forum/tracker.php") {
+@-moz-document regexp("https://pornolab.+forum/tracker.php"), regexp("https://pornolab.+forum/tracker.php.+") {
 /* СПИСОК СИДИРУЕМЫХ РАЗДАЧ / РЕЗУЛЬТАТЫ ПОИСКА */
         table.forumline.tablesorter tr > td:nth-child(3) a { /* Название форума */
             color: #a5a5a5;
@@ -973,7 +973,7 @@ table.forumline { /* Заголовки разной высоты, через к
             }
 }
 
-@-moz-document regexp("https://pornolab.+forum/privmsg.php.+") {
+@-moz-document regexp("https://pornolab.+forum/privmsg.php"), regexp("https://pornolab.+forum/privmsg.php.+") {
 /* ЛИЧНЫЕ СООБЩЕНИЯ */
         tr.prow1.tCenter, tr.prow2.tCenter {
             background: #202020;
@@ -1087,7 +1087,7 @@ table.forumline { /* Заголовки разной высоты, через к
         }
 }
 
-@-moz-document regexp("https://pornolab.+forum/viewtopic.php.+"), regexp("https://pornolab.+forum/search.php.+") {
+@-moz-document regexp("https://pornolab.+forum/viewtopic.php"), regexp("https://pornolab.+forum/viewtopic.php.+"), regexp("https://pornolab.+forum/search.php"), regexp("https://pornolab.+forum/search.php.+") {
 /* ТОПИК ФОРУМА (Раздача, обсуждение) */
     table.w100.border.bw_TRL {
         border: 0;
@@ -1712,7 +1712,7 @@ table.forumline { /* Заголовки разной высоты, через к
     }
 }
 
-@-moz-document regexp("https://pornolab.+forum/posting.php.+"), regexp("https://pornolab.+forum/viewtopic.php.+"), regexp("https://pornolab.+forum/privmsg.php.+"), regexp("https://pornolab.+forum/profile.php.+") {
+@-moz-document regexp("https://pornolab.+forum/posting.php"), regexp("https://pornolab.+forum/posting.php.+"), regexp("https://pornolab.+forum/viewtopic.php"), regexp("https://pornolab.+forum/viewtopic.php.+"), regexp("https://pornolab.+forum/privmsg.php"), regexp("https://pornolab.+forum/privmsg.php.+"), regexp("https://pornolab.+forum/profile.php"), regexp("https://pornolab.+forum/profile.php.*") {
 /* ВИЗУАЛЬНЫЙ РЕДАКТОР / СОЗДАНИЕ ТЕМЫ / НАСТРОЙКИ ПРОФИЛЯ */
 
     .mrg_4  select > option { /* Списки, размер шрифта списков */
@@ -1875,6 +1875,9 @@ img[src*='/post.gif']:hover, img[src*='/reply.gif']:hover, img[src*='/pm_post_ne
     background: #4d6d9c;
     box-shadow: 0 3px 1px rgb(0 0 0 / 20%);
 }
+img {
+    filter: none;
+}
 }
 
 @-moz-document regexp("https://pornolab.*") {
@@ -1951,26 +1954,26 @@ table.topic span[style="color: #f74faa;"], table.topic span[style="color: #96810
 
 
 body, th, td, font {
-    font: 12px Verdana,Arial,sans-serif;
+	font: 12px Verdana,Arial,sans-serif;
 }
 /* Page title and toptic title 
 .maintitle, .pagetitle {
-    font-family: "Trebuchet MS",Verdana,sans-serif;
+	font-family: "Trebuchet MS",Verdana,sans-serif;
 }
 .q-head span {
-    font-family: Verdana, sans-serif;
+	font-family: Verdana, sans-serif;
 }
 input, textarea, select {
-    font-family: Verdana,sans-serif;
+	font-family: Verdana,sans-serif;
 }
 optgroup, option, fieldset, legend {
-    font-family: Verdana,sans-serif;
+	font-family: Verdana,sans-serif;
 }
 input.pOrdSel {
-    font-family: Arial,sans-serif;
+	font-family: Arial,sans-serif;
 }
 .news_date {
-    font-family: "Courier New",Courier,monospace;
+	font-family: "Courier New",Courier,monospace;
 }
 .tz_time { font-family: "Courier New",Courier,monospace; font-size: 11px; }
 
