@@ -806,7 +806,7 @@ i.fas.fa-box-open.faa-tada.animated.animate-3-tm.freeleech-icon:after {
             }
 }
 
-@-moz-document regexp("https://pornolab.+forum/privmsg.php.+") {
+@-moz-document regexp("https://pornolab.+forum/privmsg.php"), regexp("https://pornolab.+forum/privmsg.php.+") {
 /* ЛИЧНЫЕ СООБЩЕНИЯ */
         tr.prow1.tCenter {
             background: #f1f1f1;
@@ -913,7 +913,7 @@ td.td2.row2.tCenter.pad_4, td.td2.row2.tCenter.pad_6 {
 }
 }
 
-@-moz-document regexp("https://pornolab.+forum/viewtopic.php.+"), regexp("https://pornolab.+forum/search.php.+") {
+@-moz-document regexp("https://pornolab.+forum/viewtopic.php"), regexp("https://pornolab.+forum/viewtopic.php.+"), regexp("https://pornolab.+forum/search.php"), regexp("https://pornolab.+forum/search.php.+") {
 /* ТОПИК ФОРУМА (Раздача, обсуждение) */
     td.message.td2, td.poster_btn.td3 {
         padding: 15px;
@@ -1376,7 +1376,7 @@ td.td2.row2.tCenter.pad_4, td.td2.row2.tCenter.pad_6 {
             }
 }
 
-@-moz-document regexp("https://pornolab.+forum/posting.php.+"), regexp("https://pornolab.+forum/viewtopic.php.+"), regexp("https://pornolab.+forum/privmsg.php.+"), regexp("https://pornolab.+forum/profile.php.+") {
+@-moz-document regexp("https://pornolab.+forum/posting.php"), regexp("https://pornolab.+forum/posting.php.+"), regexp("https://pornolab.+forum/viewtopic.php"), regexp("https://pornolab.+forum/viewtopic.php.+"), regexp("https://pornolab.+forum/privmsg.php"), regexp("https://pornolab.+forum/privmsg.php.+"), regexp("https://pornolab.+forum/profile.php"), regexp("https://pornolab.+forum/profile.php.+") {
 /* ВИЗУАЛЬНЫЙ РЕДАКТОР / СОЗДАНИЕ ТЕМЫ / НАСТРОЙКИ ПРОФИЛЯ */
 
     .mrg_4  select > option { /* Списки, размер шрифта списков */
