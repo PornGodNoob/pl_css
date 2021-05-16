@@ -1920,6 +1920,7 @@ a[href$="profile.php?mode=viewprofile&u=26173845"] [style*="color: darkred"] {
         padding: 4px 7px;
         font-weight: bold;
         display: inline-block;
+	text-decoration: none;
     }
     a[href$="profile.php?mode=viewprofile&u=2"].txtb, a[href$="profile.php?mode=viewprofile&u=177777"].txtb, a[href$="profile.php?mode=viewprofile&u=26173845"].txtb, a[href$="profile.php?mode=viewprofile&u=4418191"].txtb, a[href$="profile.php?mode=viewprofile&u=63712"].txtb, a[href$="profile.php?mode=viewprofile&u=5580016"].txtb, a[href$="profile.php?mode=viewprofile&u=526677"].txtb, a[href$="profile.php?mode=viewprofile&u=13193091"].txtb, a[href$="profile.php?mode=viewprofile&u=8892613"].txtb, a[href$="profile.php?mode=viewprofile&u=7616355"].txtb,  a[href$="profile.php?mode=viewprofile&u=31221896"].txtb {
         background: none;
@@ -1933,6 +1934,7 @@ a[href$="profile.php?mode=viewprofile&u=26173845"] [style*="color: darkred"] {
         padding: 4px 7px;
         font-weight: bold;
         display: inline-block;
+	text-decoration: none;
     }
 }
 
