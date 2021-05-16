@@ -1,0 +1,2108 @@
+/* Версия 1.0.0 */
+
+@-moz-document regexp("https://pornolab.*") {
+/* ШАПКА САЙТА и ДРУГОЕ */
+    #logo {
+        background: #101010;
+    }
+    div#main-nav td.nowrap a {
+        color: #ccc;
+    }
+
+    /* Ссылки */
+        .nav a, .maintitle a, .pagetitle a {
+            color: #d5d5d5;
+        }
+        .maintitle, .pagetitle {
+            padding: 0 0 10px 0;
+        }
+        h1.maintitle {
+            border-left: 5px solid #417ace;
+            padding-left: 15px;
+        }
+        :link, .topmenu a, a.gen, a.med, a.genmed, a.small, a.gensmall {
+            color: #d5d5d5;
+            text-decoration: none;
+        }
+        :link:hover, .topmenu a:hover, div#main-nav td.nowrap a:hover, a.gen:hover, a.med:hover, a.genmed:hover, a.small:hover, a.gensmall:hover {
+            color: #305996;
+            text-decoration: none !important;
+        }
+        /* FAQ */
+            .nowrap a[href='viewforum.php?f=566'] b {
+                color: white !important;
+                background: #417ace;
+                padding: 4px 7px !important;
+                border-radius: 3px;
+                margin-right: 3px;
+            }
+            .nowrap a[href='viewforum.php?f=566'] b:hover {
+                color: white !important;
+                background: none;
+            }
+
+    /* Верхнее меню (Главная, трекер и поиск) */
+        #main-nav { 
+            border: 1px solid #d8ddde;
+            background: #f5f5f5;
+            padding: 5px 10px 5px 10px;
+        }
+
+        #main-nav a { /* Цвет ссылки: Пассив */
+            color: #525252;
+        }
+        #main-nav a:hover { /* Цвет ссылки: Актив */
+            color: #1c65d6;
+        }
+    /* Меню пользователя */
+        div#main-nav {
+            padding: 12px !important;
+        }
+        .topmenu, #pagination td.nav.pad_6.row2, div#main-nav {
+            background: #202020 !important;
+            border: 0;
+            margin: 0;
+            box-shadow: 0 5px 1px rgb(0 0 0 / 30%);
+            padding: 5px;
+        }
+        .topmenu table {
+            padding: 7px 15px 7px 15px;
+        }
+        .fa-moon:before {
+            content: "ВКЛЮЧЕНА СВЕТЛАЯ";
+            font-family: sans-serif;
+            background: #5f5f5f;
+            color: white;
+            padding: 3px 7px 3px 7px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .fa-moon:hover:before {
+            background: #4d6d9c;
+        }
+        i.fas.fa-sun:before {
+            content: "ВКЛЮЧЕНА ТЕМНАЯ";
+            font-family: sans-serif;
+            background: #4d6d9c;
+            color: white;
+            padding: 3px 7px 3px 7px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        i.fas.fa-sun:hover:before {
+            background: none;
+        }
+        /* Новое личное сообщение */
+            i.fas.fa-envelope.faa-shake.animated {
+                background: transparent;
+            }
+            a.new-pm-link, i.fas.fa-envelope.faa-shake.animated {
+                color: #fff !important;
+                background: #c13729;
+                padding: 5px;
+                border-radius: 3px;
+            }
+            a.new-pm-link:hover {
+                border: 1px solid #b5392c;
+                background: transparent;
+                color: #ccc !important;
+            }
+    /* Оповещение */
+        .bypass-alert { /* Фон */
+            background: #4d6d9c !important;
+        }
+        .dCenter.nowrap a { /* Цвет ссылки: Пассив */
+            color: white !important;
+            text-decoration: none !important;
+        }
+        .dCenter.nowrap a:hover { /* Цвет ссылки: Актив */
+            color: #ccc !important;
+            text-decoration: underline !important;
+        }
+    /* Блок с поиском */
+        #page_header div:nth-child(2) {
+            top: 8px !important;
+        }
+
+        input#search-text:hover {
+            border-color: transparent;
+            width: 200px !important;
+            border-bottom: 2px solid #4d6d9c;
+        }
+        input#search-text {
+            border: 1px solid #4d6d9c;
+            border-radius: 5px;
+            background: #1b1b1b !important;
+            height: 20px;
+            margin: 0px 10px;
+            -webkit-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+        }
+        select#search-action {
+            background: #202020 !important;
+            border-color: transparent;
+        }
+
+
+
+    /* СПОЙЛЕРЫ */
+        .sp-wrap {
+            background: #264967;
+            padding: 5px;
+            border-color: transparent !important;
+        }
+        .sp-head {
+            color: #ccc;
+        }
+        .sp-head.folded.clickable.unfolded { /* Название спойлера при раскрытии */
+            margin-bottom: 7px;
+        }
+        .sp-body.inited {
+            border-color: transparent !important;
+        }
+        .sp-body {
+            background: #2b2a2a;
+            padding: 10px;
+        }
+        div.sp-wrap > div.sp-body.inited > div.sp-wrap, div.sp-body.inited > div.post-align > div.sp-wrap { /* Спойлер внутри спойлера */
+            background: #565656;
+        }
+        div.sp-wrap > div.sp-body.inited > div.sp-wrap > div.sp-body.inited > div.sp-wrap, div.sp-body.inited > div.post-align > div.sp-wrap > div.post-align > div.sp-wrap {
+            background: #6d6d6d;
+        }
+    /* ЦИТАТА */
+        .q-wrap .q-head a > span, .q-wrap .q-head span {
+            color: white;
+            background: #4d6d9c;
+            padding: 3px;
+        }
+        .q-wrap .q {
+            box-shadow: 0 2px 1px rgb(0 0 0 / 20%);
+            border: 0;
+            background: #383838;
+            border-left: 2px solid #4d6d9c !important;
+            padding: 10px;
+        }
+        /* Для древовидных */
+            .q-wrap .q > .q-wrap .q, .q-wrap .q > .q-wrap .q > .q-wrap .q > .q-wrap .q {
+                background: #222222;
+            }
+            .q-wrap .q > .q-wrap .q > .q-wrap .q {
+                background: #383838;
+            }
+    /* КОД */
+        .c-body {
+            background-color: #222222;
+            color: #4583de;
+            border-color: black !important;
+            box-shadow: inset 10px 10px 30px rgb(0 0 0 / 20%);
+            padding: 10px;
+        }
+
+/* ФРИЛИЧ */
+i.fas.fa-box-open.faa-tada.animated.animate-3-tm.freeleech-icon:after {
+    content: "ФРИЛИЧ!!!";
+    color: #fff;
+    position: absolute;
+    margin-left: 10px;
+    background: #2abd94;
+    padding: 5px;
+    font-size: 0.6em;
+}
+}
+
+@-moz-document regexp("https://pornolab.+forum/index.php") {
+/* ГЛАВНАЯ СТРАНИЦА */
+
+    /* БЛОКИ */
+        #sidebar1_wrap {
+            width: 220px;
+        }
+
+/* СПИСОК ФОРУМОВ */
+    /* КАТЕГОРИИ */
+        .cat_title { /* Блок названия */
+            background: #3c3c3c !important;
+            padding: 5px 5px 5px 15px;
+            border-left: 5px solid #417ace !important;
+            border-top: 5px solid #417ace !important;
+        }
+        .cat_title a { /* Цвет названия */
+            color: #ffffff !important;
+        }
+        .category { /* Блок категории */
+            margin-bottom: 5px;
+            margin-right: 20px;
+        }
+    /* РАЗДЕЛЫ */
+                    /* Если есть желание скрыть раздел определенный, после #f- укажите номер раздела. 11 - нетрадиционное порно
+                    #f-11 {
+                        display: none;
+                    }
+                    */
+                    /* Или сменить цвет ссылок определенного раздела */
+                    #f-11 a {
+                        color: #ff6868;
+                    }
+                    #f-11 a:hover {
+                        color: #305996;
+                    }
+                    #f-11 td.row1.f-icon-idx {
+                        background: #ff6464 !important;
+                    }
+
+        .forums td.row1.f-icon-idx { /* Столбец с иконкой */
+            background: #3c3c3c;
+            border: 1px solid #a7c3ea;
+        }
+        .forums td.row1 { /* Столбец с названием разделов */
+            background: #202020;
+            border: 1px solid #a7c3ea;
+        }
+        .forumlink { /* Название разделов */
+            border-left: 3px solid white;
+            padding-left: 15px;
+            margin-bottom: 5px;
+        }
+        td.row1.f-icon-idx img.topic_icon { /* Скрыта стандарнтая иконка из первого столбка */
+            display: none;
+        }
+        td.row1.f-icon-idx a:before { /* Добавлена другая иконка */
+            content: "\f07b";
+            font-size: 15px;
+            font-family: "Font Awesome 5 Free";
+            color: white;
+        }
+            td.row1.f-icon-idx a { /* Убрано нижнее подчеркивание */
+                text-decoration: none;
+                }
+        .sf_title { /* Название подразделов */
+            border-top: 1px solid black;
+            padding: 4px;
+        }
+        .fa-comment-dots:before { /* Иконка подраздела */
+            content: "\f0a4";
+            color: #417ace;
+            display: inline-block;
+            width: 30px;
+        }
+        .fa-comment-dots:hover:before {
+            color: white;
+            content: "NEW";
+            font-weight: bold;
+        }
+    /* КНОПКИ */
+        #forums_top_links {
+            margin-bottom: 12px;
+            margin-top: 10px;
+        }
+    /* Боковые колонки */
+        #sidebar1 h3, #idx-sidebar2 h3 { /* Заголовки */
+            background: #3c3c3c;
+            border: 0;
+            margin-bottom: 10px;
+            padding: 5px;
+            box-shadow: 0 3px 1px rgb(0 0 0 / 10%);
+        }
+        #sidebar1_wrap ul, #idx-sidebar2 ul { /* Фон списков */ 
+            background: #1b1b1b;
+            padding: 5px;
+            box-shadow: 0 3px 1px rgb(0 0 0 / 20%);
+        }
+        .sb2-block {
+            background: transparent;
+            border: 0;
+        }
+    /* Новости трекера */
+        #latest_news h3 {
+            background: #3c3c3c;
+            color: white;
+            padding: 5px 10px;
+            margin-bottom: 10px;
+            border-bottom: 5px solid #417ace;
+            border-left: 5px solid #417ace;
+            }
+        .news_date {
+            background: #3c3c3c;
+            color: white;
+        }
+        #latest_news table {
+            margin-bottom: 5px;
+        }
+}
+
+@-moz-document regexp("https://pornolab.*") {
+/* КНОПКИ */ 
+
+    input[type="file"]:hover {
+        cursor: pointer;
+    }
+
+/* Синие кнопки */
+    input[name="preview"]:hover, input[name="post"]:hover, input[value="Перейти"]:hover, input[name="del_from_ut"]:hover, input[value="по разделу"]:hover, input[value="по подразделам"]:hover, input[name="deleteall"]:hover, input[name="delete"]:hover, input[name="save"]:hover, input[type="reset"]:hover, input[value="Отправить"]:hover, a[onclick="show_file_up_input(); return false;"]:hover, input[value="Поиск"]:hover, input[value="Проголосовать"]:hover {
+        background: transparent !important;
+        cursor: pointer;
+    }
+    input[name="preview"], input[name="post"], input[value="Перейти"], input[name="del_from_ut"], input[value="по разделу"], input[value="по подразделам"], input[name="deleteall"], input[name="delete"], input[name="save"], input[type="reset"], input[value="Отправить"], a[onclick="show_file_up_input(); return false;"], input[value="Поиск"], input[value="Проголосовать"] {
+        background: #407bad !important;
+        color: #fff !important;
+        box-shadow: none !important;
+        font-weight: bold;
+        border: none;
+        border-bottom: 2px solid #407bad;
+    }
+
+/* Темные кнопки */
+            input[name="deleteall"]:hover, input[name="delete"]:hover, input[name="save"]:hover, input[name="preview"]:hover, input[name="post"]:hover, .small a.menu-root:hover, .bottom_info a.menu-root:hover, div#forums_top_links a:hover, #forums_wrap a.med:hover, #pagination td.nav.pad_6.row1 .menu-root:hover, #pagination td.nav.pad_6.row2 .menu-root:hover, input#jumpbox-submit:hover, input[value="Справочник по жанрам"]:hover, input[value="FAQ по тех. данным"]:hover, input[value="Как изготовить скриншоты"]:hover, input[value="Как разместить скриншоты"]:hover, input[value="Продолжить"]:hover {
+                background: #4d6d9c;
+                box-shadow: 0 3px 1px rgb(0 0 0 / 20%);
+                text-decoration: none !important;
+            }
+            input[name="deleteall"], input[name="delete"], input[name="save"], input[name="preview"], input[name="post"], .small a.menu-root, .bottom_info a.menu-root, div#forums_top_links a, #forums_wrap a.med, #pagination td.nav.pad_6.row1 .menu-root, #pagination td.nav.pad_6.row2 .menu-root, input#jumpbox-submit, input[value="Справочник по жанрам"], input[value="FAQ по тех. данным"], input[value="Как изготовить скриншоты"], input[value="Как разместить скриншоты"], input[value="Продолжить"], input[type="reset"], input[value="Отправить"], a[onclick="show_file_up_input(); return false;"], input[value="Поиск"] {
+                background: #525252;
+                color: white;
+                padding: 5px 10px;
+                margin: 3px;
+                cursor: pointer;
+            }
+            .small a.menu-root, .bottom_info a.menu-root, div#forums_top_links a, #forums_wrap a.med {
+                color: white;
+                text-decoration: none !important;
+            }
+        .nav {
+            margin: 0.5em 0;
+        }
+        div#forums_wrap > table > tbody > tr > td > div:nth-last-child(2) {
+            margin-top: 15px;
+        }
+
+    /* Вспылвающие меню */
+        .menu-sub table, div#dls-menu {
+            background: #2b2a2a;
+            border: 1px solid #417ace;
+            box-shadow: 5px 5px 5px rgb(0 0 0 / 20%);
+        }
+        .menu-sub table td {
+            background: none;
+        }
+        .menu-sub table th {
+            background: none;
+            color: #ccc;
+            border-bottom: 4px solid #ddd;
+        }
+        .menu-sub fieldset { /* Блок */
+            background: no-repeat;
+            margin-bottom: 10px;
+            border: 0;
+        }
+        .menu-sub legend { /* Название блока */
+            background: #4d6d9c;
+            color: white;
+            padding: 2px 5px;
+        }
+        .menu-sub label:hover { /* Фон и цвет при наведении */
+            background: #4d6d9c !important;
+            color: white !important;
+        }
+
+        div#dls-menu a {
+            background: #484848 !important;
+            color: white;
+        }
+        div#dls-menu a:hover {
+            background: #4d6d9c !important;
+        }
+
+        #h-cat-ctl input[type="button"], #topic-options input[type="button"], #tr-options input[type="button"], .menu-sub input[type="submit"], input#tor-filelist-btn {
+            background: #4d6d9c !important;
+            color: #fff !important;
+            padding: 5px;
+            width: 100% !important;
+            font-weight: bold;
+            border: 1px solid #417ace;
+        }
+        #h-cat-ctl input[type="button"]:hover, #topic-options input[type="button"]:hover, #tr-options input[type="button"]:hover, .menu-sub input[type="submit"]:hover, input#tor-filelist-btn:hover {
+            background: #525252 !important;
+            cursor: pointer;
+        }
+        .menu-sub table td.cat {
+            background: none;
+        }
+
+    /* Кнопки страниц / Навигация */
+        .small a.pg, .nav a.pg {
+            background: #3c3c3c;
+            padding: 5px;
+            color: #fff;
+            text-decoration: none !important;
+            font-size: 11px;
+        }
+        .small  a.pg:hover, .nav a.pg:hover{
+            background: #4d6d9c;
+        }
+        p.small {
+            padding-bottom: 10px;
+        }
+        p.small > b > b, .nav > p:nth-child(2) > b {
+            background: #4d6d9c;
+            padding: 5px;
+            color: #fff;
+            font-size: 11px;
+            text-decoration: none !important;
+        }
+        table#pagination, .bottom_info #pagination {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            }
+        div#pagination p:first-child, div.nav p:first-child {
+            color: white;
+        }
+        div#pagination p, div.nav p {
+            color: transparent;
+        }
+        .bottom_info #pagination > p:first-child, #pagination td.nav.pad_6.row1 > p:first-child, #pagination td.nav.pad_6.row2 > p:first-child, #main_content_wrap .bottom_info .nav > p:first-child {
+            background: #4d6d9c;
+            padding: 7px;
+        }
+        #pagination td.nav.pad_6.row1 > p:first-child, #pagination td.nav.pad_6.row2 > p:first-child {
+            color: white;
+        }
+        .bottom_info #pagination > p:nth-child(2), #pagination td.nav.pad_6.row1 > p:nth-child(2), #pagination td.nav.pad_6.row2 > p:nth-child(2), #main_content_wrap .bottom_info .nav > p:nth-child(2) {
+            margin-top: 5px;
+        }
+        #pagination td.nav.pad_6.row1, #pagination td.nav.pad_6.row2, p.small > b {
+            color: transparent;
+            border: 0;
+        }
+        .bottom_info div#pagination {
+            margin-top: 15px;
+        }
+        .bottom_info div#pagination, table#pagination, #main_content_wrap .bottom_info .nav {
+            padding: 7px 0 7px 0;
+            }
+
+/* Прозрачный фон и синияя граница */
+
+    div.nav > a, div.nav > span > a, tr#mod-action-row td.pad_4 input.bold, .table-title.leech a, .nav p.floatL a, .nav p.floatR a, table#srch-tbl > tfoot > tr > td.row2 > input[type="submit"], a[href="javascript:select_switch(true);"], a[href="javascript:select_switch(false);"], form.tokenized a[href="./index.php"], a[href="privmsg.php?folder=inbox&set_read=1"], #tor-fl-treecontrol a {
+        border: 1px solid #fff;
+        padding: 5px 10px 5px 10px;
+        border-radius: 0.3rem;
+        font-weight: bold;
+        display: inline-block;
+        margin: 4px;
+        color: #ccc;
+        cursor: pointer;
+        text-decoration: none !important;
+    }
+    a[href^="posting.php?mode=quote"], a[href^="privmsg.php?mode=quot"], a[href^="posting.php?mode=editpost"], a[onclick="return build_poll_add_form(this);"] { /* Сообщение пользователя: Цитировать, изменить, удалить */
+        padding: 2px 5px 2px 5px;
+        color: #a2a2a2 !important;
+    }
+    div.nav > a:hover, div.nav > span > a:hover, tr#mod-action-row td.pad_4 input.bold:hover, .table-title.leech a:hover, .nav p.floatL a:hover, .nav p.floatR a:hover, table#srch-tbl > tfoot > tr > td.row2 > input[type="submit"]:hover, a[href="javascript:select_switch(true);"]:hover, a[href="javascript:select_switch(false);"]:hover, form.tokenized a[href="./index.php"]:hover, a[href="privmsg.php?folder=inbox&set_read=1"]:hover, #tor-fl-treecontrol a:hover {
+        border: 1px solid transparent;
+        border-bottom: 2px solid #417ace;
+        box-shadow: 0 2px 1px rgb(0 0 0 / 20%);
+        border-radius: 0;
+        color: white !important;
+        text-decoration: none !important;
+        margin-bottom: 2px;
+    }
+    div.nav a:before, div.nav > span > a:before, form.tokenized a[href="./index.php"]:before, a[href="privmsg.php?folder=inbox&set_read=1"]:before, #tor-fl-treecontrol a:first-child:before, #tor-fl-treecontrol a:nth-child(2):before, #tor-fl-treecontrol a:last-child:before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: bold;
+        margin-right: 7px;
+    }
+    span#edit-sel-topics > a:before { /* открыть непрочитанные */
+        content: "\f35d";
+    }
+    span#show-edit-btn > a:before { /* Редактировать список */
+        content: "\f00d";
+    }
+    div.nav a[href="./index.php"]:before { /* Список форумов pornolab.net */
+        content: "\f550";
+    }
+    div.nav a[onclick="setCookie('bb_mark_read', 'all_forums'); window.location.reload(); return false;"]:before { /*  Отметить все форумы как прочитанные */
+        content: "\f00c";
+    }
+
+/* КНОПКИ - ВИЗУАЛЬНЫЙ РЕДАКТОР */
+    .mrg_4 input[type="button"]:hover {
+        background: #737373;
+        cursor: pointer;
+        border: 2px solid #e3e3e3;
+        border-radius: 5px;
+    }
+    .mrg_4 input[type="button"] {
+        color: white;
+        background: #5f5f5f;
+        padding: 5px;
+        border: 2px solid #4d6d9c;
+    }
+
+/* Кнопки с заменой текста */
+    /* Цитировать */
+        a[href^="posting.php?mode=quote"]:before, a[href^="privmsg.php?mode=quot"]:before {
+            visibility: visible;
+            content: "\f10d";
+            font-family: 'Font Awesome 5 Free';
+            position: absolute;
+            font-weight: bold;
+        }
+        a[href^="posting.php?mode=quote"]:after, a[href^="privmsg.php?mode=quot"]:after {
+            content: "Цитировать";
+            visibility: visible;
+            position: relative;
+            left: -65px;
+        }
+        a[href^="posting.php?mode=quote"], a[href^="privmsg.php?mode=quot"] {
+            visibility: hidden;
+            width: 90px;
+            font-weight: bold;
+            display: inline-block;
+            margin: 4px;
+        }
+        a[href^="posting.php?mode=quote"]:hover, a[href^="privmsg.php?mode=quot"]:hover {
+            color: #fff !important;
+        }
+    /* Изменить */
+        a[href^="posting.php?mode=editpost"]:before {
+            visibility: visible;
+            content: "\f044";
+            font-family: 'Font Awesome 5 Free';
+            position: absolute;
+            font-weight: bold;
+        }
+        a[href^="posting.php?mode=editpost"]:after {
+            content: "Редактировать";
+            visibility: visible;
+            position: relative;
+            left: -53px;
+        }
+        a[href^="posting.php?mode=editpost"] {
+            visibility: hidden;
+            width: 110px;
+            font-weight: bold;
+            display: inline-block;
+            margin: 4px;
+        }
+        a[href^="posting.php?mode=editpost"]:hover {
+            color: #fff !important;
+        }
+    /* Добавить опрос */
+        a[onclick="return build_poll_add_form(this);"]:before {
+            visibility: visible;
+            content: "\f682";
+            font-family: 'Font Awesome 5 Free';
+            position: absolute;
+            font-weight: bold;
+        }
+        a[onclick="return build_poll_add_form(this);"]:after {
+            content: "Добавить опрос";
+            visibility: visible;
+            position: relative;
+            left: -90px;
+        }
+        a[onclick="return build_poll_add_form(this);"] {
+            visibility: hidden;
+            width: 120px;
+            font-weight: bold;
+            display: inline-block;
+            margin: 4px;
+            white-space: nowrap;
+        }
+        a[onclick="return build_poll_add_form(this);"]:hover {
+            color: #fff !important;
+        }
+
+/* СКРЫТО */
+    input[value="Загрузить картинку"] { /* Скрыта кнопка загрузить картинку */
+        display: none;
+    }
+}
+
+@-moz-document regexp("https://pornolab.*") {
+/* ТАБЛИЦЫ */
+    .forumline th, .thHead {
+        background: #5f5f5f;
+        color: #fff;
+        padding: 10px 0 10px 0;
+    }
+    table.forumline {
+        background: none;
+    }
+table.forumline { /* Заголовки разной высоты, через колапс исправил */
+    border-collapse: inherit;
+    background: none !important;
+}
+
+    /* Шапка таблицы результатов поиска */
+        #search-results td.small.bold.nowrap.tRight {
+            padding: 10px !important;
+            background: none;
+        }
+        #search-results table.w100.border.bw_TRL {
+            border: 0;
+        }
+        #search-results td.cat.pad_2 {
+            background: none;
+        }
+        td.cat.bw_TRL.pad_2.tRight.small.bold { /* ВРЕМЕННО */
+            padding: 10px;
+        }
+    /* Сортировка */
+        b.headerSortDown .tbs-text, .headerSortDown .tbs-text:after {
+                content: "\f106" !important;
+        }
+        b.headerSortUp .tbs-text, .headerSortUp .tbs-text:after {
+                content: "\f107" !important;
+        }
+        .header.headerSortDown, .header.headerSortUp {
+            background-color: #4d6d9c;
+        }
+        .headerSortUp .tbs-text, .headerSortDown .tbs-text {
+            border-bottom-width: 0;
+            border-bottom-style: none;
+        }
+        .tablesorter b.tbs-text:after {
+            content: "\f105";
+            font-family: "Font Awesome 5 Free";
+            margin-left: 5px;
+            font-size: 12px
+        }
+        .headerSortDown .tbs-icon, .headerSortUp .tbs-icon, .tbs-icon {
+            display: none;
+        }
+        .bw_TB {
+            background: #4d6d9c;
+            color: white;
+        }
+        th.td2.thHead {
+            background: #4d6d9c;
+        }
+    /* Список раздач и Мои сообщения */
+        #search-results .tablesorter td, #gr-members td { /* Убран фон ячеек в результатах поиска */
+            background: none;
+            border-left: 0;
+            border-right: 0;
+        }
+        /* Цвет ссылок */
+            a.topictitle, a.torTopic, a.tLink { /* Цвет не посещенной ссылки */
+                color: #94b7d6;
+            }
+            a.topictitle:visited, a.torTopic:visited, a.tLink:visited {
+                color: #8c8a8a;
+            }
+            a.topictitle:hover, a.torTopic:hover, a.tLink:hover {
+                color: #ccc;
+            }
+        #srch-tbl tr:nth-child(odd), #search-results tr:nth-child(odd), #search-results .tablesorter tr:nth-child(odd), table.forumline.tablesorter tr:nth-child(odd), #gr-members tr:nth-child(odd) {
+            background: #202020;
+            background-color: #202020;
+        }
+        #srch-tbl tr:nth-child(even), #search-results tr:nth-child(even), #search-results .tablesorter tr:nth-child(even), table.forumline.tablesorter tr:nth-child(even), #gr-members tr:nth-child(even) { /* Фон нечетных строк в результатах поиска */
+            background: #121212;
+            background-color: #121212;
+        }
+        #srch-tbl tr:hover, #search-results .tablesorter tr:hover { /* При наведелении на строку, меняется фон и цвет левой границы */
+            background: #202020;
+        }
+        #srch-tbl tr:hover a {
+            color: #91abd2 !important;
+        }
+        #srch-tbl td {
+            -webkit-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+        }
+
+        #srch-tbl tr > td, table.forumline.tablesorter tr > td, #gr-members tr > td {
+            border-bottom: 5px solid #121212;
+        }
+        #srch-tbl td { /* Убраны границы ячеек */
+            border: 0;
+        }
+        #srch-tbl tr > td:nth-child(2) a {
+            color: #8c8a8a;
+            float: left;
+            text-align: left;
+        }
+
+        #srch-tbl tr > td:nth-child(2) a:before { /* Иконка перед названием форума */
+            margin-right: 10px;
+            margin-left: 5px;
+            content: "\f07c";
+            font-family: "Font Awesome 5 Free";
+            font-weight: bold;
+        }
+        #srch-tbl tr > td:nth-child(4) a:before { /* Иконка перед ником автора */
+            margin-right: 5px;
+            content: "\f007";
+            font-family: "Font Awesome 5 Free";
+            font-weight: bold;
+        }
+        #srch-tbl tr > td:nth-child(5) { /* Колонка с количеством ответов */
+            font-weight: bold;
+        }
+
+        #srch-tbl tr > td:nth-child(2) {
+            border-left: 2px solid #5f5f5f;
+        }
+        #srch-tbl tr > td:nth-child(6) { /* Фон последней колонки */
+            background: #5f5f5f;
+            border-bottom: 5px solid #5f5f5f;
+        }
+        [class="topicAnnounce"], [class="topicPoll"] { /* Объявление, Опрос */
+            color: white;
+            background: brown;
+            padding: 4px;
+            display: -webkit-inline-box;
+        }
+        #srch-tbl tr > td:nth-child(3) span.topicPG:nth-child(-n+2) { /* Объявление (В случаи нового сообщения) */
+            background: none;
+        }
+        /* Выделенная строка */
+            .hl-selected-row, .hl-selected-row td {
+                background-color: #ac4444 !important;
+                border-bottom: 5px solid #ac4444 !important;
+            }
+            .hl-selected-row a, .hl-selected-row td a {
+                color: white !important;
+            }
+        div#mod-action-content table.borderless.pad_0 td { /* В Моих Сообщениях, подвал */
+                background: #121212;
+                color: white;
+                font-size: 1.05em !important;
+                border-color: transparent;
+            }
+        div#mod-action-content table.borderless.pad_0 td:last-child {
+            border: 1px solid #ac4444;
+            border-left: 7px solid #ac4444;
+        }
+        /* Мои сообщения, первый столбец. Функция выделения темы для последующего удаления / Чекбокс */
+            #srch-tbl tbody > tr > td:first-child:hover:after {
+                content: "Редактировать список / Отметить для удаления";
+                position: absolute;
+                max-width: 200px;
+                margin-left: 20px;
+                background: black;
+                opacity: 0.6;
+                color: white;
+                padding: 5px;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+            input[type="checkbox"]:hover {
+                cursor: pointer;   
+            }
+            #srch-tbl tr.hl-selected-row > td:first-child:hover:after, #srch-tbl tfoot td:hover:after {
+                content: none !important;
+            }
+
+        /* Сиды и Пиры */
+            .seedmed b:after {
+                content: "\f30c";
+                font-family: "Font Awesome 5 Free";
+                margin-left: 5px;
+            }
+            .leechmed b:before {
+                content: "\f309";
+                font-family: "Font Awesome 5 Free";
+                margin-right: 5px;
+            }
+
+        span.topicPG > a:last-child::after { /* Ссылка на страницу последнего сообщения */
+            content: "LAST";
+            margin-left: 7px;
+            background: #4d6d9c;
+            color: white;
+            font-weight: bold;
+            padding: 2px 5px 2px 5px;
+            text-decoration: none;
+        }
+        span.topicPG > a:last-child:hover::after {
+            background: #5f5f5f;
+        }
+
+        /* Подвал таблицы */
+             tfoot > tr#mod-action-row {
+                border-bottom: 0;
+            }
+            tfoot > tr#mod-action-row td.pad_4 { /* Первая строка, первая ячейка с кнопкой при редактировании */
+                padding-right: 20px
+            }
+             tfoot > tr#mod-action-row > td > span {
+                font-weight: bold;
+                font-size: 0.9em;
+            }
+            tfoot > tr:first-child {
+                border-top: 15px solid #f6f6f6;
+            }
+            tfoot > tr > td {
+                background: #121212 !important;
+            }
+            tfoot > tr:hover td {
+                border-color: transparent !important;
+            }
+
+/* Срок хранения будущей закачки */
+    td[valign="bottom"] > p.small[style="margin: -2px 4px 0;"] {
+        background: #4d6d9c;
+        color: white;
+        padding: 10px;
+    }
+}
+
+@-moz-document regexp("https://pornolab.+forum/tracker.php") {
+/* СПИСОК СИДИРУЕМЫХ РАЗДАЧ / РЕЗУЛЬТАТЫ ПОИСКА */
+        table.forumline.tablesorter tr > td:nth-child(3) a { /* Название форума */
+            color: #a5a5a5;
+            float: left;
+            text-align: left;
+        }
+
+        table.forumline.tablesorter tr > td:nth-child(3) a:before { /* Иконка перед названием форума */
+            margin-right: 10px;
+            margin-left: 5px;
+            content: "\f07c";
+            font-family: "Font Awesome 5 Free";
+            font-weight: bold;
+        }
+
+/* Подсветка найденнго значения */
+    a.tLink > b {
+        color: #ffffff;
+        background: #4d6d9c;
+        padding: 3px;
+        display: inline-block;
+        border-radius: 3px;
+    }
+}
+
+@-moz-document regexp("https://pornolab.+forum/viewforum.php.*f.+") {
+/* РАЗДЕЛ */
+    .forumline th, .thHead {
+        background: #5f5f5f;
+        color: #fff;
+        padding: 10px 0 10px 0;
+    }
+    table.forumline {
+        background: none;
+    }
+    /* Шапка */
+        td.pad_2 {
+            border: none;
+            background: none;
+        }
+    /* Таблицы */
+        #main_content_wrap .forumline.forum tr:nth-child(odd) {
+            background: #202020;
+            background-color: #202020;
+        }
+        #main_content_wrap .forumline.forum tr:nth-child(even) { /* Фон нечетных строк в результатах поиска */
+            background: #121212;
+            background-color: #121212;
+        }
+        .td-prime {
+            background-color: transparent;
+        }
+        #main_content_wrap .forumline.forum tr td {
+            border-bottom: 5px solid #121212;
+        }
+        #main_content_wrap .forumline.forum tr:hover td { /* При наведелении на строку, меняется фон и цвет левой границы */
+            border-bottom: 5px solid #4d6d9c;
+        }
+        #main_content_wrap .forumline.forum td { /* Убраны границы ячеек */
+            border: 0;
+        }
+
+
+        #main_content_wrap .forumline.forum tr > td:nth-child(3), #main_content_wrap .forumline.forum tr > td:nth-child(4) { /* КОЛОНКА: Торрент / Ответов и скачиваний */
+            background: #121212;
+        }
+        #main_content_wrap .forumline.forum tr > td:nth-child(4) > a:before  { /* КОЛОНКА: Автор */
+            margin-right: 5px;
+            content: "\f007";
+            font-family: "Font Awesome 5 Free";
+            font-weight: bold;
+        }
+        #main_content_wrap .forumline.forum p.med > b {
+            border-top: 1px solid #4d6d9c;
+        }
+        #main_content_wrap .forumline.forum tr > td:nth-child(5) { /* КОЛОНКА: Последнее сообщение */
+            background: #202020;
+        }
+        
+        span.topicPG > a:last-child::after { /* Ссылка на страницу последнего сообщения */
+            content: "LAST";
+            margin-left: 7px;
+            background: #4d6d9c;
+            color: white;
+            font-weight: bold;
+            padding: 2px 5px 2px 5px;
+            text-decoration: none;
+        }
+        span.topicPG > a:last-child:hover::after {
+            background: #5f5f5f;
+        }
+        td.row3.topicSep { /* Разделеение на типы тем */
+            background: #4d6d9c;
+            color: white;
+        }
+        /* Подвал таблицы */
+             td.catBottom.med.pad_4 {
+                color: white;
+                font-weight: bold;
+                background: #121212;
+                padding: 10px;
+            }
+            td.catBottom.med.pad_4:hover {
+                border-color: transparent !important;
+            }
+
+        /* КНОПКИ */
+            td.catBottom.med.pad_4 input[type="submit"], td.pad_2 input[type="submit"], td.pad_2 input[type="button"] {
+                background: #525252;
+                color: #fff;
+                padding: 5px 15px 5px 15px;
+                font-weight: bold;
+                /*border: 1px solid #c1d7f7;*/
+                width: auto !important;
+            }
+            td.catBottom.med.pad_4 input[type="submit"]:hover, td.pad_2 input[type="submit"]:hover, td.pad_2 input[type="button"]:hover {
+                background: #4d6d9c;
+                cursor: pointer;
+            }
+}
+
+@-moz-document regexp("https://pornolab.+forum/privmsg.php.+") {
+/* ЛИЧНЫЕ СООБЩЕНИЯ */
+        tr.prow1.tCenter, tr.prow2.tCenter {
+            background: #202020;
+        }
+
+        tr.prow1.tCenter > td, tr.prow2.tCenter > td {
+            border: 0;
+            padding: 5px 4px;
+        }
+        tr.prow1.tCenter, tr.prow2.tCenter {
+            padding: 5px;
+            border-bottom: 5px solid #202020;
+        }
+        tr.prow1.tCenter:hover, tr.prow2.tCenter:hover {
+            background: #121212;
+            border-bottom: 5px solid #4d6d9c;
+        }
+
+        div.pm-nick-wrap > a:nth-child(2):before { /* Иконка перед ником автора */
+            margin-right: 5px;
+            content: "\f007";
+            font-family: "Font Awesome 5 Free";
+            font-weight: bold;
+        }
+        #srch-tbl tr > td:nth-child(5) { /* Колонка с количеством ответов */
+            font-weight: bold;
+        }
+        table.forumline > tbody > tr > td.row1 {
+            background: transparent !important;
+        }
+        /* Подвал таблицы */
+             td.catBottom.tRight.pad_4 {
+                padding: 5px 10px 0px 10px;
+                border: 0;
+                border-top: 10px solid #121212;
+            }
+            td.catBottom.pad_4 {
+                background: none;
+            }
+
+
+        /* КНОПКИ */
+            input[name="deleteall"], input[name="delete"] {
+                margin-bottom: 15px;
+            }
+            form.tokenized a[href="./index.php"]:before { /*  Список форумов pornolab.net */
+                content: "\f550";
+            }
+            a[href="privmsg.php?folder=inbox&set_read=1"]:before { /*  Отметить все ЛС как прочитанные */
+                content: "\f2b6";
+            }
+            p.small.bold.tRight {
+                margin-top: 10px;
+            }
+
+        /* Подсказки */
+            div#main_content_wrap p.small.bold.tRight {
+                border: 0;
+            }
+            div#main_content_wrap p.small, td.tRight.nowrap.small {
+                font-size: 1.0em;
+                border: 1px solid #5f5f5f;
+                padding: 10px;
+            }
+            div#main_content_wrap p.small {
+                border-left: 5px solid #4d6d9c;
+            }
+            div#main_content_wrap p.small b {
+                color: #b94f4f;
+            }
+            td.tRight.nowrap.small {
+                border-left: 5px solid #ff6767;
+                border-color: #ff6767;
+            }
+            td.tRight.nowrap.small b {
+                padding: 5px;
+                display: inline-block;
+                color: white;
+                font-size: 1.3em;
+            }
+
+
+        thead.row2.med > tr > td:first-child {
+            background: #5f5f5f;
+            color: white;
+            font-weight: bold;
+        }
+        thead.row2.med > tr > td {
+            padding: 5px;
+            border-color: transparent;
+        }
+        thead.row2.med > tr {
+            border-bottom: 5px solid #f6f6f6;
+        }
+        div.post_body {
+            padding: 15px;
+        }
+        form[action*="privmsg.php?folder="] .forumline td {
+            border: none;
+        }
+        table.forumline > tbody > tr:first-child > td {
+            background: #202020;
+        }
+        form[action*="privmsg.php?folder="] input.lite {
+            margin: 15px;
+        }
+
+    /* БЫСТРЫЙ ОТВЕТ */
+        td.td2.row2.tCenter.pad_4, td.td2.row2.tCenter.pad_6 {
+            background: #383838;
+        }
+}
+
+@-moz-document regexp("https://pornolab.+forum/viewtopic.php.+"), regexp("https://pornolab.+forum/search.php.+") {
+/* ТОПИК ФОРУМА (Раздача, обсуждение) */
+    table.w100.border.bw_TRL {
+        border: 0;
+    }
+    td.message.td2, td.poster_btn.td3 {
+        padding: 15px;
+    }
+    table#topic_main th.td2.thHead, table.topic th.thHead.td2 {
+        background: #202020;
+        color: #ccc;
+    }
+    .post_body {
+        margin: 0px 15px 0px 15px !important;
+        padding: 15px 0px 10px 15px;
+        min-height: 70px;
+    }
+    .sig-body {
+        margin: 0px 15px 0px 15px !important;
+        padding-bottom: 10px !important;
+        color: #000 !important;
+    }
+    .post_wrap {
+        margin: 0;
+        background: #222;
+        border: 0;
+        /*box-shadow: 0px 3px 5px rgb(0 0 0 / 10%);*/
+    }
+    .post_head {
+        background: #202020;
+        border-radius: 3px 3px 1px 1px;
+        border-bottom: 5px solid #101010 !important;
+    }
+    .row2 .post_head, .row2 .post_wrap {
+        border-left: 3px solid #4d6d9c;
+    }
+    td.message.td2 {
+        background: none;
+        border-top: 4px solid black;
+    }
+
+    .signature .sig-body {
+        color: #B0B0B0 !important;
+    }
+    .signature {
+        border-top: 1px solid #dcdcdc !important;
+        border: 0 !important;
+        background: #191919 !important;
+        color: transparent !important;
+    }
+    table.topic, .topic .td1, .topic .td2, .topic .td3, .post_head, .post_btn_2 { border: 0;}
+    table#topic_main > tbody:nth-child(n+2) > tr:first-child {
+        height: 200px;
+    }
+
+    a#topic-title:hover { /* Смещение заголовка при наведении */
+        margin-left: 5px;
+    }
+    a#topic-title {
+        display: inherit;
+    }
+
+    .post-align img {  /* Ширина изображений в раздаче */
+        height: auto;
+        max-width: 100%;
+    }
+    table#fuckoffadblockers td { /* Реклама. Без этого страница не сжимается */
+        display: none; /* Или можно flex */
+    }
+
+    /* Спойлеры в раздаче */
+        .sp-wrap.also-download-topics.sp-restrict-auto-open .sp-head.folded.clickable, .sp-wrap.related-topics.tCenter.sp-restrict-auto-open .sp-head.folded.clickable, .sp-wrap.related-topics.sp-restrict-auto-open .sp-head.folded.clickable, .thx-container .sp-head.folded.clickable {
+            color: #ccc !important;
+            -webkit-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
+        }
+        .sp-wrap.also-download-topics.sp-restrict-auto-open .sp-head.folded.clickable:hover, .sp-wrap.related-topics.tCenter.sp-restrict-auto-open .sp-head.folded.clickable:hover, .sp-wrap.related-topics.sp-restrict-auto-open .sp-head.folded.clickable:hover, .thx-container .sp-head.folded.clickable:hover {
+            padding-left: 40px;
+        }
+        .thx-container .sp-wrap {
+            background: none;
+        }
+        div.thx-container > div.sp-wrap:nth-child(-n+4) { /* Последние поблагодарившие */
+            border: 2px solid #e8e8e8;
+            border-bottom: 4px solid #ffc800;
+        }
+        div.thx-container > div.sp-wrap:nth-child(-n+4) > div.sp-head.folded.clickable:before { /* Последние поблагодарившие */
+            content: "\f164";
+            font-family: "Font Awesome 5 Free";
+            font-weight: bold;
+            margin-right: 8px;
+            color: #ffc800;
+        }
+        .sp-wrap.related-topics.sp-restrict-auto-open { /* Похожие раздачи */
+            background: none;
+            border: 2px solid #e8e8e8;
+            border-bottom: 4px solid #a74848;
+        }
+        .sp-wrap.also-download-topics.sp-restrict-auto-open { /* Вместе с этой раздачей скачивают */
+            background: none;
+            border: 2px solid #e8e8e8;
+            border-bottom: 4px solid #4d6d9c;
+        }
+        /* Иконка */
+            .folded {
+                background: none;
+            }
+            .sp-head.folded.clickable:before {
+                content: "\f067"; /* + */
+                margin-right: 10px;
+                font-family: 'Font Awesome 5 Free';
+            }
+            .sp-head.folded.clickable.unfolded:before {
+                content: "\f068"; /* - */
+            }
+
+    /* Блок сообщения пользователя */
+        .row1 { /* Нечетная */
+            background: #2b2a2a;
+            border-top: 4px solid black;
+        }
+        .row2 { /* Четная */
+            background: #202429;
+            border-top: 4px solid black;
+        }
+        td.poster_info.td1, td.poster_btn.td3 { /* Инфо о пользователе */
+            box-shadow: 4px 0px 3px rgb(0 0 0 / 20%);
+        }
+    /* Пользователь */
+        .nick, .nick a { /* Никнейм */
+            color: #ccc !important;
+            padding: 5px;
+        }
+        .nick:hover, .nick a:hover { /* Никнейм */
+            color: #4d6d9c !important;
+        }
+        p.joined, p.posts, p.from { /* Информация о пользователе */
+            background: #1b1b1b;
+            margin: 5px 10px;
+            padding: 7px;
+            border-radius: 2px;
+            font-size: 11px;
+            color: #ccc;
+            display: flex;
+        }
+        .poster_info em {
+            margin-right: auto;
+        }
+
+        td.poster_info.td1 {
+            border-top: 4px solid black;
+            width: 15%;
+            text-align: center;
+            min-width: 150px;
+        }
+        td.poster_btn.td3, td.poster_info.td1 {
+            background: none;
+        }
+        .poster_info .avatar {
+        margin: 0 auto;
+            margin-bottom: 10px;
+            margin-top: 15px;
+        }
+
+    /* Профиль и ЛС */
+        table#topic_main > tbody > tr:nth-child(2) {
+            display: table-cell;
+            vertical-align: top;
+        }
+        table#topic_main > tbody > tr:nth-child(2)  > td.poster_btn.td3 {
+            display: block;
+        }
+        /* Донат */
+            a[href="/forum/viewtopic.php?t=2565922"] { /* Подсветка, что донат разрешен*/
+                background: #e8db40;
+                padding: 7px;
+                font-weight: bold;
+                color: black;
+                left: -10px;
+                position: relative;
+            }
+            p#donate-permitted {
+                box-sizing: border-box;
+                border: 2px solid #e8db40;
+            }
+        a[href="/forum/viewtopic.php?t=2565922"]:hover {
+            border: 1px solid #000;
+            background: #6b6b6b;
+            color: white;
+        }
+    /* Изображения */
+        .post_body img, .avatar img {
+            filter: none !important;
+        }
+    /* Пользовательская таблица в сообщении */
+        table.post-table-user > tbody > tr > td {
+            background: none;
+            border: 1px solid #5f5f5f !important;
+        }
+
+    /* Опрос */
+        div#poll {
+            background: transparent;
+            border: 0;
+            border-top: 3px solid #417ace;
+            margin-bottom: 20px;
+            padding: 10px !important;
+        }
+        #poll-results-block td, #poll-votes-block td {
+            background: transparent;
+        }
+        #poll-results-block td:first-child {
+            border-left: 5px solid #417ace;
+            padding: 5px;
+        }
+        #poll-votes-block label.wrap:hover {
+            background: #4d6d9c;
+        }
+        #poll-votes-block label.wrap {
+            display: block;
+            padding: 5px;
+        }
+
+/* СТРАНИЦА РАЗДАЧИ */
+
+    /* Таблица торрента в раздаче */
+        table.attach.bordered.med > tbody > tr {
+            display: revert;
+        }
+        /* Статистика раздачи */
+            td.catTitle {
+                background: #5f5f5f !important;
+                color: white;
+            }
+            table.forumline.dl_list td, td.row5.pad_2.tCenter, .mrg_4.pad_4 {
+                background: #121212;
+            }
+            table.forumline.dl_list {
+                margin-bottom: 20px;
+            }
+            table.forumline.dl_list td {
+                border: 0;
+            }
+            td.row3.pad_4 a:before {
+                font-family: "Font Awesome 5 Free";
+                margin-right: 7px;    
+            }
+            td.row3.pad_4 a:nth-child(-n+2):before {
+                content: "\f067";
+                font-weight: bold;
+            }
+            td.row3.pad_4 a:last-child:before {
+                content: "\f068";
+                font-weight: bold;
+            }
+            table.peers {
+                border-collapse: inherit;
+            }
+
+        /* Сиды и Личи */
+            table.borderless.w60.bCenter > tbody > tr:first-child > td > p {
+                float: inherit;
+                margin: 0 !important;
+            }
+            table.borderless.w60.bCenter > tbody > tr:first-child > td {
+                color: white;
+                background: #4d6d9c;
+                padding: 5px;
+            }
+            table.peers th {
+                background: #5f5f5f;
+                color: #ccc;
+            }
+            .dl_list .header.headerSortDown, .dl_list .header.headerSortUp  {
+                border-bottom: 5px solid #4d6d9c;
+                background: #383838;
+            }
+            table.borderless.w60.bCenter td,table#leechers-tbl td {
+                background: #202020;
+                border: 2px solid #121212;
+                border-collapse: collapse;
+            }
+            table.borderless.w60.bCenter tr:hover {
+                background: #e5edf9 !important;           
+            }
+            table.borderless.w60.bCenter tr:nth-child(even) {
+                background: #f1f1f1;
+                background-color: #f1f1f1;
+            }
+
+            a.pseed.partial-seeder:after { /* Иконка для частичных сидов */
+                font-family: "Font Awesome 5 Free"; 
+                margin-left: 7px;
+                content: "\f110";
+            }
+            a.keeper:after { /* Иконкк для хранителей */
+                font-family: "Font Awesome 5 Free"; 
+                margin-left: 7px;
+                content: "\f19c";
+            }
+            a.keeper {
+                border-bottom: 2px solid #f9a307;
+                display: block;
+            }
+
+            a.p-owner, a.p-owner:visited {
+                color: #417ace;
+            }
+            a.seedmed, a.leechmed {
+                color: #ccc !important;
+            }
+
+        /* Панель темы */
+            td.small.bold.nowrap.tRight, td.cat.pad_2 {
+                background: none;
+                padding-bottom: 7px;
+            }
+
+            form#search-t-form input[type="text"] {
+                width: 10% !important;
+                min-width: 100px;
+                border: 1px solid #4d6d9c !important;
+                border-radius: 0.3rem;
+            }
+            form#search-t-form .btn-icon-search {
+                background-color: #525252;
+                color: white;
+                font-size: 12px;
+                margin-left: 5px;
+            }
+            form#search-t-form .btn-icon-search:hover {
+                background-color: #4d6d9c;
+            }
+
+        /* Таблица с торрентом */
+            div#tor-reged table {
+                box-shadow: 3px 4px 3px rgb(0 0 0 / 10%);
+            }
+            div#tor-reged p.small { /* Размер торрент-файла */
+                color: white;
+                background: #4d6d9c;
+                padding: 5px;
+                margin-top: 10px;
+                font-size: 1.1em;
+            }
+            div#tor-reged .row1 {
+                border: 0;
+            }
+            div#tor-reged .row1 td {
+                background: #191919;
+                padding: 10px;
+                border: 0;
+            }
+            div#tor-reged .row1 > td:first-child {
+                background: #4d6d9c !important;
+                color: white;
+                font-weight: bold;
+                border-bottom: 2px solid #191919 !important;
+            }
+            div#tor-reged > table > tbody > tr:nth-child(6) {
+                display: none;
+            }
+            /* Первая строка со ссылками */
+                div#tor-reged .row3 td a:hover {
+                    font-weight: bold;
+                    text-decoration: none !important;
+                }
+                div#tor-reged .row3 td a:before {
+                    content: "\f0a4";
+                    font-family: "Font Awesome 5 Free";
+                    margin-right: 7px;
+                }
+                div#tor-reged .row3 td a {
+                    color: white;
+                    text-decoration: none;
+                }
+                div#tor-reged .row3 td {
+                    background: #4d6d9c;
+                }
+            /* Приватный торрент */
+                #tor-reged i.fas.fa-shield-alt:after {
+                    margin-left: 10px;
+                    background: #c55e5e;
+                    color: white;
+                    content: "Приватный торрент";
+                    padding: 5px 5px 5px 5px;
+                    font-family: monospace;
+                }
+            
+            /* Содержимое раздачи */
+                #tor-fl-wrap, #tor-fl-wrap td {
+                    border: 0;
+                    background: #222222 !important;
+                }
+                #tor-filelist {
+                    background: #191919 !important;
+                    border: 1px solid #4d6d9c !important;
+                    border-radius: 8px;
+                    padding: 15px;
+                }
+                #tor-filelist s, #tor-filelist .b > s {
+                    color: white !important;
+                    background: #4d6d9c;
+                    padding: 3px;
+                    font-weight: bold;
+                }
+                /* Кнопки */
+                    #tor-fl-treecontrol a:first-child:before { /* Свернуть */
+                        content: "\f885";
+                    }
+                    #tor-fl-treecontrol a:nth-child(2):before { /* Развернуть */
+                        content: "\f884";
+                    }
+                    #tor-fl-treecontrol a:last-child:before { /* Отменить или Повторить */
+                        content: "\f021";
+                    }
+                    #tor-filelist .tor-root-dir:hover, #tor-filelist .b:hover {
+                        color: #417ace;
+                    }
+
+
+/* Список сообщений */
+    td.td2.cat.nav.pad_4 img {
+        display: none;
+    }
+    td.td2.cat.nav.pad_4 a {
+        color: white;
+    }
+    td.td2.cat.nav.pad_4 {
+        background: #5f5f5f;
+        padding: 10px;
+    }
+    tr:last-child > td.catBottom.td2 {
+        display: none;
+    }
+
+/* Подсветка найденного слова */
+    highlight {
+        color: #ffffff;
+        background: #4d6d9c;
+        padding: 1px 3px 1px 3px;
+    }
+}
+
+@-moz-document regexp("https://pornolab.+forum/profile.php.+") {
+/* ПРОФИЛЬ ПОЛЬЗОВАТЕЛЯ */
+        table.forumline {
+            border-collapse: collapse;
+        }
+        .bordered td {
+            border-color: transparent;
+        }
+        .active-torrents-list {
+            border: 0;
+        }
+        #t-self tr:hover, #t-seed tr:hover, #t-leech tr:hover { /* При наведелении на строку, меняется фон и цвет левой границы */
+            border-bottom: 5px solid #4d6d9c;
+        }
+        #t-self tr, #t-seed tr, #t-leech tr {
+           border-bottom: 5px solid #121212; 
+        }
+        #t-self td, #t-seed td, #t-leech td { /* Убраны границы ячеек */
+            border: 0;
+        }
+        #t-self tr > td:nth-child(2) a, #t-seed tr > td:nth-child(2) a, #t-leech tr > td:nth-child(2) a {
+            float: left;
+            text-align: left;
+        }
+        #t-self tr > td:nth-child(1) a:before, #t-seed tr > td:nth-child(1) a:before, #t-leech tr > td:nth-child(1) a:before { /* Иконка перед названием форума */
+            margin-right: 10px;
+            margin-left: 5px;
+            content: "\f07c";
+            font-family: "Font Awesome 5 Free";
+            font-weight: bold;
+        }
+        #t-self tr > td:nth-child(5), #t-seed tr > td:nth-child(5), #t-leech tr > td:nth-child(5), #t-self tr > td:nth-child(4), #t-seed tr > td:nth-child(4), #t-leech tr > td:nth-child(4), #t-self tr > td:nth-child(3), #t-seed tr > td:nth-child(3), #t-leech tr > td:nth-child(3) { /* Колонка с общей скростью */
+            background: #121212;
+        }
+        #t-self tr > td:nth-child(5) > p, #t-seed tr > td:nth-child(5) > p, #t-leech tr > td:nth-child(5) > p {
+            color: #7bb0ff;
+        }
+/* */
+        #t-self .row1 tr, #t-self .row1 td, #t-seed .row1 tr, #t-leech .row1 tr, #t-seed .row1 td, #t-leech .row1 td {
+            background: none;
+        }
+        #t-self tr > td:nth-child(2), #t-seed tr > td:nth-child(2), #t-leech tr > td:nth-child(2) {
+            border-left: 2px solid #5f5f5f;
+        }
+        #t-self tr > td:nth-child(6), #t-seed tr > td:nth-child(6), #t-leech tr > td:nth-child(6) { /* Фон последней колонки */
+            background: #5f5f5f;
+        }
+        p.seedsmall {
+            color: black;
+        }
+        .active-torrents-list {
+            background-color: #121212 !important;
+        }
+        /* Донат */
+            a[href="/forum/viewtopic.php?t=2565922"] { /* Подсветка, что донат разрешен*/
+                background: #e8db40;
+                padding: 7px;
+                font-weight: bold;
+                color: black;
+                left: -10px;
+                position: relative;
+                display: inline-block;
+            }
+            a[href="/forum/viewtopic.php?t=2565922"]:hover {
+                background: #6b6b6b;
+                color: white;
+            }
+        /* Участник групп */
+            a[onclick="ajax.group_membership('get_group_list'); return false;"] {
+                padding: 4px 7px;
+                display: inline-block;
+                box-sizing: border-box;
+                border: 2px solid #407bad;
+            }
+            a[onclick="ajax.group_membership('get_group_list'); return false;"] b {
+                background: #407bad;
+                padding: 6px 10px;
+                font-weight: bold;
+                right: -10px;
+                position: relative;
+            }
+        /* Раздачи */
+            .table-title.seed.table-title-uncollapsed.clickable {
+                color: white;
+                background: #337c33;
+                padding: 7px;
+                -webkit-transition: all .4s ease-in-out;
+                transition: all .4s ease-in-out;
+                border-bottom: 3px solid transparent;
+            }
+            .table-title.seed.table-title-uncollapsed.clickable:hover {
+                background: transparent;
+                border-bottom: 3px solid #337c33;
+            }
+            .table-title.leech.table-title-uncollapsed.clickable {
+                color: white;
+                background: #ba3f3f;
+                padding: 7px;
+                -webkit-transition: all .4s ease-in-out;
+                transition: all .4s ease-in-out;
+                border-bottom: 3px solid transparent;
+            }
+            .table-title.leech.table-title-uncollapsed.clickable:hover {
+                background: transparent;
+                border-bottom: 3px solid #ba3f3f;
+            }
+        /* Таблица рейтинга */
+            table.ratio {
+                border: 0px;
+                border-collapse: collapse;  
+                margin-top: 10px;
+            }
+            table.ratio th {
+                background: #4d6d9c;
+            }
+            table.ratio td {
+                background: #232323;
+                border: 1px solid #000000;
+            }
+            table.user_details th {
+                vertical-align: inherit;
+            }
+            table.ratio th {
+                font-weight: bold;
+                color: white !important;
+            }
+            table.ratio a {
+                color: white;
+                font-weight: bold;
+            }
+            table.ratio a:before {
+                font-family: 'Font Awesome 5 Free';
+                content: "\f0a4";
+                margin-right: 7px;
+            }
+            table.ratio td {
+                padding: 5px 4px;
+            }
+
+}
+
+@-moz-document regexp("https://pornolab.+forum/profile.php.*mode=editprofile") {
+/* НАСТРОЙКИ ПРОФИЛЯ */
+    table.forumline.usercp_register td {
+        background: #202020;
+    }
+    table.forumline.usercp_register h6 { /* Примечания */
+        background: #5f5f5f;
+        border: 1px solid #5f5f5f;
+        padding: 10px;
+        border-left: 5px solid #417ace;
+    }
+    table.forumline.usercp_register [style*="color: darkred"] {
+        color: #9ec5ff !important;
+        font-size: 1.1em;
+    }
+    table.forumline.usercp_register td.row2.small { /* Примечания */
+        background: #4d6d9c;
+        color: white;
+        font-size: 1.1em !important;
+        padding-left: 20px;
+    }
+    table.forumline.usercp_register > tbody > tr:last-child > td { /* Последняя строка */
+        background: #5f5f5f;
+        padding: 10px;
+    }
+    .forumline td {
+        border: 2px solid #000;
+    }
+    [type="password"], [name="user_email"], [name="user_contact"], [name="user_occ"], [name="user_interests"], [name="user_from"] {
+        border: 1px solid #4d6d9c;
+        border-radius: 5px;
+        background: #1b1b1b !important;
+        height: 20px;
+        margin: 10px;
+    }
+    input[type="file"] {
+        border: 0 !important;
+    }
+}
+
+@-moz-document regexp("https://pornolab.+forum/posting.php.+"), regexp("https://pornolab.+forum/viewtopic.php.+"), regexp("https://pornolab.+forum/privmsg.php.+"), regexp("https://pornolab.+forum/profile.php.+") {
+/* ВИЗУАЛЬНЫЙ РЕДАКТОР / СОЗДАНИЕ ТЕМЫ / НАСТРОЙКИ ПРОФИЛЯ */
+
+    .mrg_4  select > option { /* Списки, размер шрифта списков */
+        font-size: 1.2em;
+    }
+
+    .mrg_4  select {  /* Списки */
+        padding: 2px;
+    }
+
+    a[onclick="show_file_up_input(); return false;"] { /* Загрузить файл */
+        display: inline-block;
+    }
+
+    /* Создание Темы */
+    .buttons.mrg_4 > div { /* Счётчик символов */
+        background: #b94f4f;
+        color: white;
+        padding: 5px;
+    }
+
+    /* Таблицы */
+    td.vTop.pad_0.w100 {
+        background: #202429;
+    }
+    form.tokenized > table.bordered > tbody:last-child > tr:nth-child(2) {
+        display: none;
+    }
+    tbody.pad_4 > tr > td, tbody#rel-tpl > tr > td {
+        background: #407bad;
+        padding: 10px;
+    }
+    td.vTop.pad_4, td.catBottom, table.forumline > tbody > tr > td.row1 {
+        background: #202429;
+    }
+    table.bordered, td.vTop.pad_0.w100, td.vTop.pad_4, table.bordered td {
+        border: 0;
+    }
+    td.row2.tCenter.pad_6, td.pad_4.med, td.catBottom.med, td.pad_8.tCenter.bold {
+        background: #5f5f5f;
+        border: 0;
+        color: white;
+    }
+    input[name="subject"] {
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+    p.nav > a:last-child { /* Выделение раздела темы */
+        background: #4d6d9c;
+        color: white;
+        padding: 5px;
+    }
+    p.nav {
+        margin-bottom: 15px;
+    }
+}
+
+@-moz-document regexp("https://pornolab.*") {
+/* ЗАМЕНА ИЗОБРАЖЕНИЙ */
+
+    /* Раздача и топик просмотрены / Удалена маленькая иконка нового */
+        img[src*='/folder_dl.gif'], img[src*='/folder.gif'], img[src*='/icon_newest_reply.gif'], img[src*='/vote_lcap.gif'], img[src*='/vote_rcap.gif'], img[src*='icon_minipost.gif'] { 
+            display: none;
+        }
+
+    /* НОВОЕ СООБЩЕНИЕ */
+        img[src*='/folder_dl_new.gif'], img[src*='/folder_new.gif'], img[src*='/folder_sticky_new.gif'], img[src*='/folder_announce_new.gif'], img[src*='/folder_new_big.gif'], img[src*='icon_minipost_new.gif'] { 
+            content: url(https://i114.fastpic.ru/big/2021/0331/f0/cc1219a683627ef86c3c00cdf90df2f0.webp);
+            width: auto !important;
+            height: 16px;
+            filter: invert(1) contrast(7) hue-rotate(176deg);
+        }
+    /* Раздача или топик прилеплены */
+        img[src*='/folder_sticky.gif'] { 
+            content: url(https://i114.fastpic.ru/big/2021/0331/88/88ee22e1c8a303b88803b9fc7ebe4d88.webp);
+            width: auto !important;
+            max-height: 20px;
+            filter: invert(1);
+        }
+
+    /* Топик или раздача закрыта */
+        img[src*='/folder_lock.gif'], img[src*='/folder_lock_new.gif'] { 
+            content: url(https://i114.fastpic.ru/big/2021/0331/b6/7f07fa8ea41f18279e55b31a642029b6.webp);
+            width: auto !important;
+            max-height: 20px;
+            filter: invert(1);
+        }
+
+    /* Топик обновления */
+        img[src*='/folder_announce.gif'] {
+            content: url(https://i114.fastpic.ru/big/2021/0331/81/a551be953dbb0d0dba69077066f31b81.webp);
+            width: auto !important;
+            max-height: 20px;
+            filter: invert(1);
+        }
+
+    /* Форум  */
+        img[src*='/folder_big.gif'] { 
+            content: url(https://i114.fastpic.ru/big/2021/0331/9d/b3c7d304bc58f4fad139b2820dcca29d.webp);
+            filter: none !important;
+        }
+        img[src*='/folder_big.gif']:hover { 
+            animation: slidein 0.5s;
+            position: relative;
+        }
+
+    /* Значок Торрента */
+        img[src*='/attach_big.gif'] { 
+            content: url(https://i114.fastpic.ru/big/2021/0331/89/244d2df5420f42f751f57d9d5c0ab789.webp);
+            filter: invert(1) !important;
+        }
+
+    /* Новая тема */
+        img[src*='/post.gif']{
+            content: url(https://i114.fastpic.ru/big/2021/0402/5b/2135b6b18b838a9d829b3438ade99c5b.webp);
+            filter: none !important;
+        }
+    /* Новое сообщение */
+        img[src*='/pm_post_new.gif'] {
+            content: url(https://i114.fastpic.ru/big/2021/0402/d9/21ada99b96001ba65b64abdc03098ad9.webp);
+            filter: none !important;
+        }
+    /* Ответить */
+        img[src*='/reply.gif'] {
+            content: url(https://i114.fastpic.ru/big/2021/0402/cd/49e7f3c4835da9e6f4c79a35d87926cd.webp);
+            filter: none !important;
+        }
+    /* Тема закрыта */
+        img[src*='/reply_locked.gif'] {
+            content: url(https://i114.fastpic.ru/big/2021/0428/83/56be97cd2d4750fe8c630757b9b5da83.webp);
+            background: #e74c4c;
+            filter: none !important;
+            }
+
+    /* ЛИЧНЫЕ СООБЩЕНИЯ */
+        /* Входящие */
+            img[src*='/msg_inbox.gif'] {
+                content: url(https://i114.fastpic.ru/big/2021/0402/e0/753fc6f6ad9dbabad8727dd6836f94e0.webp);
+                filter: invert(1);
+            }
+        /* Исходящие */
+            img[src*='/msg_outbox.gif'] {
+                content: url(https://i114.fastpic.ru/big/2021/0402/5a/b74256f4ac93ddff9dcbf2e404ee005a.webp);
+                filter: invert(1);
+            }
+        /* Отправленные */
+            img[src*='/msg_sentbox.gif'] {
+                content: url(https://i114.fastpic.ru/big/2021/0402/e0/753fc6f6ad9dbabad8727dd6836f94e0.webp);
+                transform: rotate(-90deg);
+                filter: invert(1);
+            }
+        /* Сохранённые */
+            img[src*='/msg_savebox.gif'] {
+                content: url(https://i114.fastpic.ru/big/2021/0402/c9/9b9665146d591f044fcd8dda42447fc9.webp);
+                filter: invert(1);
+            }
+
+img[src*='/post.gif']:hover, img[src*='/reply.gif']:hover, img[src*='/pm_post_new.gif']:hover {
+    background: #4d6d9c;
+    box-shadow: 0 3px 1px rgb(0 0 0 / 20%);
+}
+}
+
+@-moz-document regexp("https://pornolab.*") {
+/* ИКОНКИ */
+
+.tor-dup, .tor-not-approved, .tor-approved, .tor-need-edit {
+    color: white;
+    font-weight: bold;
+    padding: 4px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+    /* Временная раздача / На премодерации */
+        .tor-dup {
+            background: #417ace;
+        }
+    /* Раздача не проверена / Раздача не дооформлена*/
+        .tor-not-approved, .tor-need-edit {
+            background: #ff5d5d;
+        }
+    /* Раздача проверена */
+        .tor-approved {
+            background: #4c934c;
+        }
+}
+
+@-moz-document regexp("https://pornolab.*") {
+/* ЦВЕТ НИКОВ */
+
+/* КООРДИНАТОРЫ */
+a[href$="profile.php?mode=viewprofile&u=26173845"] [style*="color: darkred"] {
+    color: white !important;
+}
+    a[href$="profile.php?mode=viewprofile&u=2"], a[href$="profile.php?mode=viewprofile&u=177777"], a[href$="profile.php?mode=viewprofile&u=26173845"], a[href$="profile.php?mode=viewprofile&u=4418191"], a[href$="profile.php?mode=viewprofile&u=63712"], a[href$="profile.php?mode=viewprofile&u=5580016"], a[href$="profile.php?mode=viewprofile&u=526677"], a[href$="profile.php?mode=viewprofile&u=13193091"], a[href$="profile.php?mode=viewprofile&u=8892613"], a[href$="profile.php?mode=viewprofile&u=7616355"] {
+        color: white !important;
+        background: #417ace;
+        border-radius: 5px;
+        padding: 4px 7px;
+        font-weight: bold;
+        display: inline-block;
+    }
+    a[href$="profile.php?mode=viewprofile&u=2"].txtb, a[href$="profile.php?mode=viewprofile&u=177777"].txtb, a[href$="profile.php?mode=viewprofile&u=26173845"].txtb, a[href$="profile.php?mode=viewprofile&u=4418191"].txtb, a[href$="profile.php?mode=viewprofile&u=63712"].txtb, a[href$="profile.php?mode=viewprofile&u=5580016"].txtb, a[href$="profile.php?mode=viewprofile&u=526677"].txtb, a[href$="profile.php?mode=viewprofile&u=13193091"].txtb, a[href$="profile.php?mode=viewprofile&u=8892613"].txtb, a[href$="profile.php?mode=viewprofile&u=7616355"].txtb,  a[href$="profile.php?mode=viewprofile&u=31221896"].txtb {
+        background: none;
+        font-weight: 100;
+    }
+/* ДРУГИЕ АДМИНИСТРАТИВНЫЕ */
+    a[href$="profile.php?mode=viewprofile&u=31221896"] {
+        color: white !important;
+        background: #bd9a4b;
+        border-radius: 5px;
+        padding: 4px 7px;
+        font-weight: bold;
+        display: inline-block;
+    }
+}
+
+@-moz-document regexp("https://pornolab.*") {
+/* ЦВЕТ ТЕКСТА */
+
+/* Остальные цвета, замена на свой */
+table.topic span[style="color: #c70151;"], table.topic span[style="color: #b7004b;"], table.topic span[style="color: #097fb5;"] {
+    color: #18b2e4 !important;
+    filter: none !important;
+}
+table.topic span[style="color: #f74faa;"], table.topic span[style="color: #96810b;"], table.topic span[style="color: #7bacc1;"], table.topic span[style="color: #c03029;"], table.topic span[style="color: #3f758b;"], table.topic span[style="color: #3e748a;"] {
+    filter: none !important;
+}
+}
+
+@-moz-document regexp("https://pornolab.*") {
+/* ШРИФТЫ
+
+
+body, th, td, font {
+    font: 12px Verdana,Arial,sans-serif;
+}
+/* Page title and toptic title 
+.maintitle, .pagetitle {
+    font-family: "Trebuchet MS",Verdana,sans-serif;
+}
+.q-head span {
+    font-family: Verdana, sans-serif;
+}
+input, textarea, select {
+    font-family: Verdana,sans-serif;
+}
+optgroup, option, fieldset, legend {
+    font-family: Verdana,sans-serif;
+}
+input.pOrdSel {
+    font-family: Arial,sans-serif;
+}
+.news_date {
+    font-family: "Courier New",Courier,monospace;
+}
+.tz_time { font-family: "Courier New",Courier,monospace; font-size: 11px; }
+
+.ui-widget{font-family:Arial,Helvetica,sans-serif;font-size:1em}
+.ui-widget button{font-family:Arial,Helvetica,sans-serif;font-size:1em}
+ */
+}
+
+@-moz-document regexp("https://pornolab.*") {
+/* Анимации */
+@keyframes slidein {
+  10% {
+    left: -7px;
+    transform: rotate(-10deg);
+  }
+  25% {
+    left: 0px;
+    transform: rotate(0deg);
+  }
+  40% {
+    left: 7px;
+    transform: rotate(10deg);
+  }
+  55% {
+    left: -7px;
+    transform: rotate(-10deg);
+  }
+  70% {
+    left: 0px;
+    transform: rotate(0deg);
+  }
+  85% {
+    left: 7px;
+    transform: rotate(10deg);
+  }
+  100% {
+    left: 0px;
+    transform: rotate(0deg);
+  }
+}
+@keyframes slidein {
+  10% {
+    left: -7px;
+    transform: rotate(-10deg);
+  }
+  25% {
+    left: 0px;
+    transform: rotate(0deg);
+  }
+  40% {
+    left: 7px;
+    transform: rotate(10deg);
+  }
+  55% {
+    left: -7px;
+    transform: rotate(-10deg);
+  }
+  70% {
+    left: 0px;
+    transform: rotate(0deg);
+  }
+  85% {
+    left: 7px;
+    transform: rotate(10deg);
+  }
+  100% {
+    left: 0px;
+    transform: rotate(0deg);
+  }
+}
+
+
+/* Прогресс Бар */
+
+    img[src="//static.pornolab.net/templates/default/images/voting_bar.gif"] {
+        content: url();
+        background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(36 157 255)), color-stop(1, rgb(65 122 206)) );
+        background-image: -moz-linear-gradient( center bottom, rgb(36 157 255) 37%, rgb(65 122 206) 69% );
+        position: relative;
+        overflow: hidden;
+    }
+    img[src="//static.pornolab.net/templates/default/images/voting_bar.gif"]:after {
+    content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, rgba(255, 255, 255, .2)), color-stop(.25, transparent), color-stop(.5, transparent), color-stop(.5, rgba(255, 255, 255, .2)), color-stop(.75, rgba(255, 255, 255, .2)), color-stop(.75, transparent), to(transparent) );
+        background-image: -moz-linear-gradient( -45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent );
+        z-index: 1;
+        -webkit-background-size: 50px 50px;
+        -moz-background-size: 50px 50px;
+        background-size: 50px 50px;
+        -webkit-animation: move 2s linear infinite;
+        -moz-animation: move 2s linear infinite;
+        -webkit-border-top-right-radius: 8px;
+        -webkit-border-bottom-right-radius: 8px;
+        -moz-border-radius-topright: 8px;
+        -moz-border-radius-bottomright: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        -webkit-border-top-left-radius: 20px;
+        -webkit-border-bottom-left-radius: 20px;
+        -moz-border-radius-topleft: 20px;
+        -moz-border-radius-bottomleft: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        overflow: hidden;
+    }
+
+    @-webkit-keyframes move {
+        0% {
+           background-position: 0 0;
+        }
+        100% {
+           background-position: 50px 50px;
+        }
+    }
+
+    @-moz-keyframes move {
+        0% {
+           background-position: 0 0;
+        }
+        100% {
+           background-position: 50px 50px;
+        }
+    }
+
+/* Плавный переход */
+    #poll-votes-block label.wrap, a#topic-title {
+        -webkit-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+    }
+}
